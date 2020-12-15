@@ -17,10 +17,22 @@ body{
     transform: translate(-50%,-50%);
 }
 
-#logo path:nth-child(1){
-    stroke-dasharray: 1700px;
-    stroke-dashoffset: 1700px;
-    animation: line-animation 2s ease forwards infinite;
+.yum_0{
+    stroke-dasharray: 3713px;
+    stroke-dashoffset: 3714px;
+    animation: yum_draw_0 3100ms ease-in-out 0ms infinite;
+
+}
+.yum_1{
+    stroke-dasharray: 3713px;
+    stroke-dashoffset: 3714px;
+    animation: yum_draw_1 3100ms ease-in-out 0ms infinite;
+
+}
+.yum_2{
+    stroke-dasharray: 3713px;
+    stroke-dashoffset: 3714px;
+    animation: yum_draw_2 3100ms ease-in-out 0ms infinite;
 
 }
 
@@ -36,8 +48,28 @@ body{
 /*  !*animation: line-animation 5s ease forwards infinite;*!*/
 /*}*/
 
-@keyframes line-animation {
-    to {
-        stroke-dashoffset: 0;
-    }
+@keyframes yum_draw {100%{stroke-dashoffset: 0;}}
+
+@keyframes yum_fade {0%{stroke-opacity: 1;}
+    96.7741935483871%{stroke-opacity:1;}
+    100%{stroke-opacity:0;}
 }
+
+@keyframes yum_draw_0 {
+    0%{stroke-dashoffset: 3714}
+    96.7741935483871%{ stroke-dashoffset: 0;}
+    100%{ stroke-dashoffset: 0;}
+}
+
+@keyframes yum_draw_1 {
+    0%{stroke-dashoffset: 3714}
+    96.7741935483871%{ stroke-dashoffset: 0;}
+    100%{ stroke-dashoffset: 0;}
+}
+
+@keyframes yum_draw_2 {
+    0%{stroke-dashoffset: 3714}
+    96.7741935483871%{ stroke-dashoffset: 0;}
+    100%{ stroke-dashoffset: 0;}
+}
+
